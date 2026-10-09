@@ -14,10 +14,15 @@ docker compose up -d
 
 ### Backend
 - Variável de ambiente alterada -> PORT: "4000"
+- Novo volume para /app/registros
 
 ### Frontend
 - Adicionando propriedade hostname:"localhost"
 - Variável de ambiente alterada -> API_URL: "http://api:4000"
+- Adicionar dependencia de com a API
+
+## Container
+- Definição de registros
 
 ## Comandos depois das correções
 
@@ -28,3 +33,11 @@ docker compose up -d
 ![alt text](image-4.png)
 
 ![alt text](image-5.png)
+
+## Critério 3
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)

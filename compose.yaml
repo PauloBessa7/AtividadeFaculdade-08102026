@@ -8,6 +8,10 @@ services:
         source: ./dados
         target: /app/dados
         read_only: true
+      - type: volume
+        source: registros
+        target: /app/registros
+
   portal:
     build: ./portal
     hostname: "localhost"
@@ -17,3 +21,6 @@ services:
       API_URL: "http://api:4000"
     depends_on:
       - api
+
+volumes:
+  registros:
